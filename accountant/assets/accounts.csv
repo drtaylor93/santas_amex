@@ -1,0 +1,6 @@
+Creating new client with ID: 1
+Deposit of $300 successful for client 1
+Creating new client with ID: 2
+Error withdrawing for client 2: Insufficient funds
+Deposit of $250 successful for client 1
+Successfully processed transactions.
