@@ -1,4 +1,5 @@
 type, client, tx, amount
 deposit, 1, 1, 250
-withdrawal, 2, 2, 234.325347
+dispute, 1, 1
+withdrawal, 1, 2, 200
 deposit, 1, 3, 300

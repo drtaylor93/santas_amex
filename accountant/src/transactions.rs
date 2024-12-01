@@ -1,98 +1,144 @@
-use std::collections::HashMap;
 use std::error::Error;
 use std::fs::File;
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize};
 use csv::{ReaderBuilder};
 use crate::client::{Client};
 use dashmap::DashMap;
 use std::sync::LazyLock;
 
-
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize)]
 pub struct Transaction {
-    // Type is not a valid field for a struct, changed field name to transaction_type
     #[serde(rename = "type")]
     pub transaction_type: String,
     pub client: u16,
     pub tx: u32,
-    pub amount: f32,
+    pub amount: Option<f32>,
 }
 
-// In my experience dashmap is better suited for concurrency. Will likely make the client hashmap
-// a dashmap as well after further testing
 static TRANSACTIONS_MAP: LazyLock<DashMap<u32, Transaction>> = LazyLock::new(|| DashMap::new());
 
+// TODO: Add a logger to separate debug statements from final output
 
 pub fn process_transactions(input_file: &str) -> Result<(), Box<dyn Error>> {
-    transaction_to_map(input_file)?;
-    let mut client_map: HashMap<u16, Client> = HashMap::new();
-
-    for transaction in TRANSACTIONS_MAP.iter() {
-        // Try to find the client in the map
-        let client_entry = if let Some(client) = client_map.get_mut(&transaction.client) {
-            client
-        } else {
-            // If the client id is not in the map add the client id as the key
-            // and the client as the value. Return the reference so we can
-            // perform a transaction on it
-            println!("Creating new client with ID: {}", transaction.client);
-            client_map.insert(transaction.client, Client::new(transaction.client));
-            client_map.get_mut(&transaction.client).unwrap()
-        };
-
-
-        match transaction.transaction_type.as_str() {
-            "deposit" => {
-                client_entry.deposit(transaction.amount);
-                println!(
-                    "Deposit of ${} successful for client {}",
-                    transaction.amount, transaction.client
-                );
-            }
-            "withdrawal" => {
-                match client_entry.withdraw(transaction.amount) {
-                    Ok(_) => println!(
-                        "Withdrawal of ${} successful for client {}",
-                        transaction.amount, transaction.client
-                    ),
-                    Err(error) => println!(
-                        "Error withdrawing for client {}: {}",
-                        transaction.client, error
-                    ),
-                }
-            }
-            // Any non recognized transactions will go here. I'll make transactions case insensitive
-            // later
-            _ => println!(
-                "This type of transaction isn't available for Santa's Amex: {} for client {}",
-                transaction.transaction_type, transaction.client
-            ),
-        }
-    }
-
-    //println!("Client List: {:?}", client_map);
-    Ok(())
-}
-
-
-pub fn transaction_to_map(input_file: &str) -> Result<(), Box<dyn Error>> {
+    // Client Map keeps a copy of all client data in a map for future reference
+    let client_map: DashMap<u16, Client> = DashMap::new();
     let transaction_file = File::open(input_file)?;
-    // Assumption: CSV file has a header (type, client, tx, amount)
-    let mut transaction_extractor = ReaderBuilder::new()
+
+    let mut transaction_reader = ReaderBuilder::new()
+        .flexible(true)
         .trim(csv::Trim::All)
         .has_headers(true)
         .from_reader(transaction_file);
 
-    for result in transaction_extractor.deserialize() {
-        match result {
+    for row in transaction_reader.records() {
+        match row {
+            // If the CSV row is valid add it to the client map
+            // If the client in the transaction does not exist create a new client in the map
             Ok(record) => {
-                let transaction: Transaction = record;
-                TRANSACTIONS_MAP.insert(transaction.tx, transaction);
+                if let Some(transaction) = parse_transaction(&record) {
+                    let mut client_entry = client_map
+                        .entry(transaction.client)
+                        .or_insert_with(|| {
+                            println!("Creating new client: {}", transaction.client);
+                            Client::new(transaction.client)
+                        });
+
+                    // Convert the transaction type to lowercase for case-insensitive matching
+                    match transaction.transaction_type.to_lowercase().as_str() {
+                        "deposit" => {
+                            client_entry.deposit(transaction.amount);
+                            println!(
+                                "Deposit of ${:?} successful {}",
+                                transaction.amount, transaction.client
+                            );
+                        }
+                        "withdrawal" => {
+                            match client_entry.withdraw(transaction.amount) {
+                                Ok(_) => println!(
+                                    "Withdrawal of ${:?} successful {}",
+                                    transaction.amount, transaction.client
+                                ),
+                                Err(error) => println!(
+                                    "Sorry Santa, you've exceeded your limit {}: {}",
+                                    transaction.client, error
+                                ),
+                            }
+                        }
+                        "dispute" => {
+                            if let Some(disputed_transaction) = TRANSACTIONS_MAP.get(&transaction.tx) {
+                                if let Some(disputed_amount) = disputed_transaction.value().amount {
+                                    _ = client_entry.dispute(Some(disputed_amount));
+                                    println!(
+                                        "Dispute processed for client {}: Held += {:?}, Available -= {:?}",
+                                        transaction.client, disputed_amount, disputed_amount
+                                    );
+                                } else {
+                                    println!(
+                                        "Disputed transaction has no amount for Transaction ID {}.",
+                                        transaction.tx
+                                    );
+                                }
+                            } else {
+                                println!(
+                                    "Transaction with ID {} not found for dispute.",
+                                    transaction.tx
+                                );
+                            }
+                        }
+                        _ => println!(
+                            "Unsupported transaction type: {:?} for client {:?}",
+                            transaction.transaction_type, transaction.client
+                        ),
+                    }
+
+                    TRANSACTIONS_MAP.insert(transaction.tx, transaction);
+                } else {
+                    eprintln!("Skipping invalid transaction: {:?}", record);
+                }
             }
             Err(err) => {
-                eprintln!("Uh oh, there was an issue accessing your transactions. Please try again later: {}", err);
+                eprintln!(
+                    "Error reading transactions from the CSV file: {}",
+                    err
+                );
             }
         }
     }
+
+    println!("\nClient Details:");
+    for client_entry in &client_map {
+        let client = client_entry.value();
+        println!(
+            "Client ID: {}, Available: {:.2}, Held: {:.2}, Total: {:.2}",
+            client_entry.key(), client.available, client.held, client.total
+        );
+    }
+
     Ok(())
+}
+
+
+// Disputes, Chargebacks, Resolves may not have an amount provided.
+// Using .flexible() for the csv crate does not seem to allow for varying rows
+// so extracting each value bit by bit from the row seems to be the best way to handle this at the
+// moment.
+fn parse_transaction(record: &csv::StringRecord) -> Option<Transaction> {
+    // Ensure we get the first field properly split
+    let transaction_type = record.get(0)?.to_string();
+    let client = record.get(1)?.parse::<u16>().ok()?;
+    let tx = record.get(2)?.parse::<u32>().ok()?;
+
+    // If the transaction type is "dispute" and there's no amount, set amount to None
+    let amount = if transaction_type == "dispute" && record.get(3).is_none() {
+        None
+    } else {
+        record.get(3).and_then(|s| s.parse::<f32>().ok())
+    };
+
+    Some(Transaction {
+        transaction_type,
+        client,
+        tx,
+        amount,
+    })
 }
