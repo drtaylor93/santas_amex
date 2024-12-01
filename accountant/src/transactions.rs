@@ -9,10 +9,10 @@ use std::sync::LazyLock;
 #[derive(Debug, Deserialize)]
 pub struct Transaction {
     #[serde(rename = "type")]
-    pub transaction_type: String,
-    pub client: u16,
-    pub tx: u32,
-    pub amount: Option<f32>,
+    transaction_type: String,
+    client: u16,
+    tx: u32,
+    amount: Option<f32>,
 }
 
 static TRANSACTIONS_MAP: LazyLock<DashMap<u32, Transaction>> = LazyLock::new(|| DashMap::new());
@@ -32,8 +32,6 @@ pub fn process_transactions(input_file: &str) -> Result<(), Box<dyn Error>> {
 
     for row in transaction_reader.records() {
         match row {
-            // If the CSV row is valid add it to the client map
-            // If the client in the transaction does not exist create a new client in the map
             Ok(record) => {
                 if let Some(transaction) = parse_transaction(&record) {
                     let mut client_entry = client_map
@@ -45,46 +43,11 @@ pub fn process_transactions(input_file: &str) -> Result<(), Box<dyn Error>> {
 
                     // Convert the transaction type to lowercase for case-insensitive matching
                     match transaction.transaction_type.to_lowercase().as_str() {
-                        "deposit" => {
-                            client_entry.deposit(transaction.amount);
-                            println!(
-                                "Deposit of ${:?} successful {}",
-                                transaction.amount, transaction.client
-                            );
-                        }
-                        "withdrawal" => {
-                            match client_entry.withdraw(transaction.amount) {
-                                Ok(_) => println!(
-                                    "Withdrawal of ${:?} successful {}",
-                                    transaction.amount, transaction.client
-                                ),
-                                Err(error) => println!(
-                                    "Sorry Santa, you've exceeded your limit {}: {}",
-                                    transaction.client, error
-                                ),
-                            }
-                        }
-                        "dispute" => {
-                            if let Some(disputed_transaction) = TRANSACTIONS_MAP.get(&transaction.tx) {
-                                if let Some(disputed_amount) = disputed_transaction.value().amount {
-                                    _ = client_entry.dispute(Some(disputed_amount));
-                                    println!(
-                                        "Dispute processed for client {}: Held += {:?}, Available -= {:?}",
-                                        transaction.client, disputed_amount, disputed_amount
-                                    );
-                                } else {
-                                    println!(
-                                        "Disputed transaction has no amount for Transaction ID {}.",
-                                        transaction.tx
-                                    );
-                                }
-                            } else {
-                                println!(
-                                    "Transaction with ID {} not found for dispute.",
-                                    transaction.tx
-                                );
-                            }
-                        }
+                        "deposit" => process_deposit(&mut client_entry, &transaction),
+                        "withdrawal" => process_withdrawal(&mut client_entry, &transaction),
+                        "dispute" => process_dispute(&mut client_entry, &transaction),
+                        "resolve" => process_resolve(&mut client_entry, &transaction),
+
                         _ => println!(
                             "Unsupported transaction type: {:?} for client {:?}",
                             transaction.transaction_type, transaction.client
@@ -110,10 +73,9 @@ pub fn process_transactions(input_file: &str) -> Result<(), Box<dyn Error>> {
         let client = client_entry.value();
         println!(
             "Client ID: {}, Available: {:.2}, Held: {:.2}, Total: {:.2}",
-            client_entry.key(), client.available, client.held, client.total
+            client_entry.key(), client.available(), client.held(), client.total()
         );
     }
-
     Ok(())
 }
 
@@ -142,3 +104,104 @@ fn parse_transaction(record: &csv::StringRecord) -> Option<Transaction> {
         amount,
     })
 }
+
+
+fn process_deposit(client_entry: &mut Client, transaction: &Transaction) {
+    // Check if the transaction has a valid amount
+    if let Some(amount) = transaction.amount {
+        // Ensure the amount is positive
+        if amount > 0.0 {
+            client_entry.deposit(Some(amount));
+            println!(
+                "Deposit of ${:.2} successful for client {}. New available balance: ${:.2}",
+                amount, client_entry.id(), client_entry.available()
+            );
+        } else {
+            println!("Cannot deposit negative amount of money, use a withdrawal: ${:.2}", amount);
+        }
+    } else {
+        println!("Invalid deposit amount for client {}", client_entry.id());
+    }
+}
+
+fn process_withdrawal(client_entry: &mut Client, transaction: &Transaction) {
+    if let Some(amount) = transaction.amount {
+        if amount > 0.0 {
+            let client_id = client_entry.id();
+            match client_entry.withdraw(Some(amount)) {
+                Ok(_) => println!(
+                    "Withdrawal of ${:.2} successful for client {}. New available balance: ${:.2}",
+                    amount, client_id, client_entry.available()
+                ),
+                Err(error) => println!(
+                    "Sorry Santa, you've exceeded your limit for client {}: {}",
+                    client_id, error
+                ),
+            }
+        } else {
+            println!("Cannot withdraw a non-positive amount: ${:.2}", amount);
+        }
+    } else {
+        println!("Invalid withdrawal amount for client {}", client_entry.id());
+    }
+}
+
+fn process_dispute(client_entry: &mut Client, transaction: &Transaction) {
+    if let Some(disputed_transaction) = TRANSACTIONS_MAP.get(&transaction.tx) {
+        if let Some(disputed_amount) = disputed_transaction.value().amount {
+            match client_entry.dispute(transaction.tx, Some(disputed_amount)) {
+                Ok(_) => {
+                    println!(
+                        "Dispute successful for client {}: ${:.2} moved to Held, Available balance is now ${:.2}.",
+                        transaction.client, disputed_amount, client_entry.available()
+                    );
+                }
+                Err(err) => {
+                    println!(
+                        "Error processing dispute for client {}: {}",
+                        transaction.client, err
+                    );
+                }
+            }
+        } else {
+            println!(
+                "Error: Transaction ID {} has no amount to dispute.",
+                transaction.tx
+            );
+        }
+    } else {
+        println!(
+            "Error: Transaction ID {} not found for dispute.",
+            transaction.tx
+        );
+    }
+}
+
+fn process_resolve(client_entry: &mut Client, transaction: &Transaction) {
+    // Check if the transaction exists in the disputed transactions map
+    if client_entry.disputed_transactions().contains_key(&transaction.tx) {
+        // Try to resolve the dispute
+        match client_entry.resolve(transaction.tx) {
+            Ok(_) => {
+                println!(
+                    "Transaction {} was resolved {}. Held funds are now available.",
+                    transaction.tx, transaction.client
+                );
+            }
+            Err(err) => {
+                println!(
+                    "Failed to resolve transaction {} for client {}: {}",
+                    transaction.tx, transaction.client, err
+                );
+            }
+        }
+    } else {
+        println!(
+            "Transaction {} not found in disputed transactions for client {}. Unable to resolve.",
+            transaction.tx, transaction.client
+        );
+    }
+}
+
+
+
