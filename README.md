@@ -1,5 +1,5 @@
 # Santa's Amex
-![Santa](./assets/santa.jpg)
+![Santa](accountant/assets/santa.jpg)
 
 This project is designed to keep Santa's expenses in check. Due to unforeseen circumstances,
 the North Pole has been subjected to a 25% tariff on all toys created by elves in Santa's workshop that
