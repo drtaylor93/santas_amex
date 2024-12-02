@@ -12,10 +12,12 @@ a legal team to assist him with his taxes, but is also using their services to a
 to dispute claims of bad deeds that may be lowering their available funds for Christmas toys.
 
 ### Getting Started
+There is a set of 50 transactions that can be used to run the program as follows:
+- `cd accountant`
 - `cargo install`
 - `cargo build`
 - `cd assets`
-- `cargo run -- transactions.csv > accounts.cs`
+- `cargo run -- transactions.csv > accounts.csv`
 
 
 ### Generated Files
