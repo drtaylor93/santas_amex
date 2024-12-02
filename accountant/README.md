@@ -1,9 +1,9 @@
-# Santa's AMEX
+# Santa's Amex
 ![Santa](./assets/santa.jpg)
 
 This project is designed to keep Santa's expenses in check. Due to unforeseen circumstances,
 the North Pole has been subjected to a 25% tariff on all toys created by elves in Santa's workshop that
-that are being shipped to children in the United States. To save on cost, he will purchase all American 
+are being shipped to children in the United States. To save on cost, he will purchase all American 
 children's toys from department stores within the US. 
 
 Each child has a total amount that can be spent on them based on their deeds. Good deeds have 
@@ -30,3 +30,10 @@ logs and errors encountered in the program
 * All new clients are initialized with a starting value of $0
 * Withdrawals that exceed the amount of available funds are rejected. NO OVERDRAFTS!
 
+
+## Testing
+To test the client functions use the following:
+`cargo test`
+
+The test-case crate is used to test each potential transaction along with the expected output
+in both success and failure cases.

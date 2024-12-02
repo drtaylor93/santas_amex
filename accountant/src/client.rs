@@ -35,19 +35,53 @@ impl Client {
         self.available
     }
 
-    pub fn held(&self) -> f32 {
-        self.held
+    pub fn set_available(&mut self, amount: f32) {
+        self.available += amount;
+        self.total += amount;
     }
 
 
-    pub fn total(&self) -> f32 {
-        self.total
+    pub fn set_held(&mut self, amount: f32)  {
+        self.held += amount;
+        self.available -= amount;
+
     }
 
     pub fn locked(&self) -> bool {
         self.locked
     }
 
+    pub fn set_locked(&mut self, status: bool) {
+        self.locked = status;
+    }
+
+    pub fn held(&self) -> f32 {
+        self.held
+    }
+
+    pub fn total(&self) -> f32 {
+        self.total
+    }
+
+    /*
+  Description: Checks if the account is locked. Transactions performed on a locked account will
+               be ignored. This version is used when result should be logged
+  Parameters:
+      client_entry: &Client Reference to the instance of the client
+      transaction_type: &str  Type of transaction attempted
+      tx: u32 id of transaction
+  */
+    pub fn is_account_locked(&self, tx: u32) -> bool {
+        if self.locked {
+            log::warn!(
+            "Skipping transaction {}: Account {} is locked.",
+            tx,
+            self.id
+        );
+            return true;
+        }
+        false
+    }
     pub fn disputed_transactions(&self) -> &HashMap<u32, f32> {
         &self.disputed_transactions
     }
@@ -63,12 +97,15 @@ impl Client {
                 self.available += value;
                 self.total += value;
                 info!(
-                    "Deposited ${:.2} to Client {}. New available balance: ${:.2}",
+                    "Deposited ${:.4} to Client {}. New available balance: ${:.4}",
                     value, self.id, self.available
                 );
             }
-            Some(value) => {
-                warn!("Cannot deposit a negative amount of money: ${:.2}", value);
+            Some(0.0) => {
+                warn!("Cannot deposit a zero amount: $0.00 is not allowed");
+            }
+            Some(_value) => {
+                warn!("Cannot deposit a negative amount of money");
             }
             None => {
                 warn!("Deposit failed: Amount is None");
@@ -90,7 +127,7 @@ impl Client {
                     self.available -= value;
                     self.total -= value;
                     info!(
-                        "Withdrawal of ${:.2} successful. Your new balance is: ${:.2}",
+                        "Withdrawal of ${:.4} successful. Your new balance is: ${:.4}",
                         value, self.available
                     );
                     Ok(())
@@ -98,8 +135,8 @@ impl Client {
                     Err("Insufficient funds")
                 }
             }
-            Some(value) => {
-                println!("Cannot withdraw a negative or zero amount: ${:.2}", value);
+            Some(_value) => {
+                println!("Cannot withdraw a negative or zero amount");
                 Err("Invalid withdrawal amount")
             }
             None => {

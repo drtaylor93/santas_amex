@@ -1,6 +1,7 @@
 mod transactions;
-mod utils;
+pub mod utils;
 mod client;
+mod client_tests;
 
 use transactions::process_transactions;
 use utils::{parse_cli_arguments, write_clients_to_csv, setup_logger};
