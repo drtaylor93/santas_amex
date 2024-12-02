@@ -1,5 +1,6 @@
 use serde::{Serialize};
 use std::collections::HashMap;
+use log::{info, warn};
 
 #[derive(Debug, Serialize)]
 pub struct Client {
@@ -30,24 +31,12 @@ impl Client {
         self.id
     }
 
-    pub fn set_id(&mut self, id: u16) {
-        self.id = id;
-    }
-
     pub fn available(&self) -> f32 {
         self.available
     }
 
-    pub fn set_available(&mut self, available: f32) {
-        self.available = available;
-    }
-
     pub fn held(&self) -> f32 {
         self.held
-    }
-
-    pub fn set_held(&mut self, held: f32) {
-        self.held = held;
     }
 
 
@@ -55,25 +44,12 @@ impl Client {
         self.total
     }
 
-    pub fn set_total(&mut self, total: f32) {
-        self.total = total;
-    }
-
-
     pub fn locked(&self) -> bool {
         self.locked
     }
 
-    pub fn set_locked(&mut self, locked: bool) {
-        self.locked = locked;
-    }
-
     pub fn disputed_transactions(&self) -> &HashMap<u32, f32> {
         &self.disputed_transactions
-    }
-
-    pub fn set_disputed_transactions(&mut self, disputed_transactions: HashMap<u32, f32>) {
-        self.disputed_transactions = disputed_transactions;
     }
 
     /*
@@ -86,16 +62,16 @@ impl Client {
             Some(value) if value > 0.0 => {
                 self.available += value;
                 self.total += value;
-                println!(
+                info!(
                     "Deposited ${:.2} to Client {}. New available balance: ${:.2}",
                     value, self.id, self.available
                 );
             }
             Some(value) => {
-                println!("Cannot deposit a negative amount of money: ${:.2}", value);
+                warn!("Cannot deposit a negative amount of money: ${:.2}", value);
             }
             None => {
-                println!("Deposit failed: Amount is None");
+                warn!("Deposit failed: Amount is None");
             }
         }
     }
@@ -113,7 +89,7 @@ impl Client {
                 if self.available >= value {
                     self.available -= value;
                     self.total -= value;
-                    println!(
+                    info!(
                         "Withdrawal of ${:.2} successful. Your new balance is: ${:.2}",
                         value, self.available
                     );
@@ -127,7 +103,7 @@ impl Client {
                 Err("Invalid withdrawal amount")
             }
             None => {
-                println!("Withdrawal failed: None value found");
+                warn!("Withdrawal failed: None value found");
                 Err("No amount provided for withdrawal")
             }
         }
@@ -151,7 +127,7 @@ impl Client {
                     self.available -= value;
                     self.held += value;
                     self.disputed_transactions.insert(tx_id, value);
-                    println!(
+                    info!(
                         "Dispute initiated for amount ${:.4} on transaction {}. Held: ${:.4}, Available: ${:.4}",
                         value, tx_id, self.held, self.available
                     );
@@ -178,7 +154,7 @@ impl Client {
                 self.held -= amount;
                 self.available += amount;
                 self.disputed_transactions.remove(&tx_id); // Remove the resolved transaction
-                println!(
+                info!(
                     "Resolved dispute for transaction {}: Held -= {:.2}, Available += {:.2}",
                     tx_id, amount, amount
                 );
@@ -188,6 +164,27 @@ impl Client {
             }
         } else {
             Err("Transaction not found in disputed transactions")
+        }
+    }
+
+    pub fn chargeback(&mut self, tx_id: u32) -> Result<(), &str> {
+        if let Some(&disputed_amount) = self.disputed_transactions.get(&tx_id) {
+            if self.held >= disputed_amount {
+                self.held -= disputed_amount;
+                self.total -= disputed_amount;
+                self.disputed_transactions.remove(&tx_id);
+                self.locked = true;
+
+                info!(
+                    "Chargeback processed for transaction {}: Held -= {:.4}, Total -= {:.4}. Account is locked.",
+                    tx_id, disputed_amount, disputed_amount
+                );
+                Ok(())
+            } else {
+                Err("Insufficient held funds for chargeback")
+            }
+        } else {
+            Err("Transaction not found in disputed transactions for chargeback")
         }
     }
 }
