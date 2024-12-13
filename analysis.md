@@ -51,4 +51,5 @@ user.
 
 > ✍️ The datasets used in this test had a total of 50 transaction, and each solution was run a total of ten times. For \
 > more concrete results, larger sample sizes and more runs should be used to determine if there is an inflection point 
-> where parallism outperforms a single threaded operation for writing to a csv.
+> where parallelism outperforms a single threaded operation for writing to a csv. Program was run on a 2021 Macbook Pro w/
+> 16 GB RAM.
