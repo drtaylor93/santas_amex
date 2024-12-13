@@ -154,3 +154,1169 @@
 2024-12-04 14:03:38 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
 2024-12-04 14:03:38 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
 2024-12-04 14:03:38 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Transactions initialized!
+2024-12-13 05:59:45 [INFO] Creating new client: 6
+2024-12-13 05:59:45 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Creating new client: 3
+2024-12-13 05:59:45 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 05:59:45 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 05:59:45 [INFO] Creating new client: 10
+2024-12-13 05:59:45 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 05:59:45 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 05:59:45 [INFO] Creating new client: 5
+2024-12-13 05:59:45 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:45 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 05:59:45 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 05:59:45 [INFO] Creating new client: 7
+2024-12-13 05:59:45 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 05:59:45 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 05:59:45 [INFO] Creating new client: 1
+2024-12-13 05:59:45 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 05:59:45 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 05:59:45 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 05:59:45 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 05:59:45 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Creating new client: 2
+2024-12-13 05:59:45 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 05:59:45 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 05:59:45 [INFO] Creating new client: 8
+2024-12-13 05:59:45 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 05:59:45 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 05:59:45 [INFO] Creating new client: 4
+2024-12-13 05:59:45 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 05:59:45 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 05:59:45 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 05:59:45 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 05:59:45 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 05:59:45 [INFO] Creating new client: 9
+2024-12-13 05:59:45 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 05:59:45 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 05:59:45 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 05:59:45 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 05:59:45 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 05:59:45 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 05:59:45 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 05:59:45 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 05:59:45 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 05:59:45 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:45 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 05:59:45 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 05:59:45 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 05:59:45 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 05:59:45 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:45 [INFO] write_clients_to_csv completed in 384.63µs seconds.
+2024-12-13 05:59:53 [INFO] Transactions initialized!
+2024-12-13 05:59:53 [INFO] Creating new client: 6
+2024-12-13 05:59:53 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 05:59:53 [INFO] Creating new client: 3
+2024-12-13 05:59:53 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 05:59:53 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 05:59:53 [INFO] Creating new client: 10
+2024-12-13 05:59:53 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 05:59:53 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 05:59:53 [INFO] Creating new client: 5
+2024-12-13 05:59:53 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:53 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 05:59:53 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 05:59:53 [INFO] Creating new client: 7
+2024-12-13 05:59:53 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 05:59:53 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 05:59:53 [INFO] Creating new client: 1
+2024-12-13 05:59:53 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 05:59:53 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 05:59:53 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 05:59:53 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 05:59:53 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 05:59:53 [INFO] Creating new client: 2
+2024-12-13 05:59:53 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 05:59:53 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 05:59:53 [INFO] Creating new client: 8
+2024-12-13 05:59:53 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 05:59:53 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 05:59:53 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 05:59:53 [INFO] Creating new client: 4
+2024-12-13 05:59:53 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 05:59:53 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 05:59:53 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 05:59:53 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 05:59:53 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 05:59:53 [INFO] Creating new client: 9
+2024-12-13 05:59:53 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 05:59:53 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 05:59:53 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 05:59:53 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 05:59:53 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 05:59:53 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 05:59:53 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 05:59:53 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 05:59:53 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 05:59:53 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 05:59:53 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:53 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 05:59:53 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 05:59:53 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 05:59:53 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 05:59:53 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 05:59:53 [INFO] write_clients_to_csv completed in 413.92µs seconds.
+2024-12-13 06:00:06 [INFO] Transactions initialized!
+2024-12-13 06:00:06 [INFO] Creating new client: 6
+2024-12-13 06:00:06 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:00:06 [INFO] Creating new client: 3
+2024-12-13 06:00:06 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:00:06 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:00:06 [INFO] Creating new client: 10
+2024-12-13 06:00:06 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:00:06 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:00:06 [INFO] Creating new client: 5
+2024-12-13 06:00:06 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:00:06 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:00:06 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:00:06 [INFO] Creating new client: 7
+2024-12-13 06:00:06 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:00:06 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:00:06 [INFO] Creating new client: 1
+2024-12-13 06:00:06 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:00:06 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:00:06 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:00:06 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:00:06 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:00:06 [INFO] Creating new client: 2
+2024-12-13 06:00:06 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:00:06 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:00:06 [INFO] Creating new client: 8
+2024-12-13 06:00:06 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:00:06 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:00:06 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:00:06 [INFO] Creating new client: 4
+2024-12-13 06:00:06 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:00:06 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:00:06 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:00:06 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:00:06 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:00:06 [INFO] Creating new client: 9
+2024-12-13 06:00:06 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:00:06 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:00:06 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:00:06 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:00:06 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:00:06 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:00:06 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:00:06 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:00:06 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:00:06 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:00:06 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:00:06 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:00:06 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:00:06 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:00:06 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:00:06 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:00:06 [INFO] write_clients_to_csv completed in 268.04µs seconds.
+2024-12-13 06:02:02 [INFO] Transactions initialized!
+2024-12-13 06:02:02 [INFO] Creating new client: 6
+2024-12-13 06:02:02 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:02 [INFO] Creating new client: 3
+2024-12-13 06:02:02 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:02 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:02 [INFO] Creating new client: 10
+2024-12-13 06:02:02 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:02 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:02 [INFO] Creating new client: 5
+2024-12-13 06:02:02 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:02 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:02 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:02 [INFO] Creating new client: 7
+2024-12-13 06:02:02 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:02 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:02 [INFO] Creating new client: 1
+2024-12-13 06:02:02 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:02 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:02 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:02 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:02 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:02 [INFO] Creating new client: 2
+2024-12-13 06:02:02 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:02 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:02 [INFO] Creating new client: 8
+2024-12-13 06:02:02 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:02 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:02 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:02 [INFO] Creating new client: 4
+2024-12-13 06:02:02 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:02 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:02 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:02 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:02 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:02 [INFO] Creating new client: 9
+2024-12-13 06:02:02 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:02 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:02 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:02 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:02 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:02 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:02 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:02 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:02 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:02 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:02 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:02 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:02 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:02 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:02 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:02 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:02 [INFO] write_clients_to_csv completed in 344.50µs seconds.
+2024-12-13 06:02:13 [INFO] Transactions initialized!
+2024-12-13 06:02:13 [INFO] Creating new client: 6
+2024-12-13 06:02:13 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:13 [INFO] Creating new client: 3
+2024-12-13 06:02:13 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:13 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:13 [INFO] Creating new client: 10
+2024-12-13 06:02:13 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:13 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:13 [INFO] Creating new client: 5
+2024-12-13 06:02:13 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:13 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:13 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:13 [INFO] Creating new client: 7
+2024-12-13 06:02:13 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:13 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:13 [INFO] Creating new client: 1
+2024-12-13 06:02:13 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:13 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:13 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:13 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:13 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:13 [INFO] Creating new client: 2
+2024-12-13 06:02:13 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:13 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:13 [INFO] Creating new client: 8
+2024-12-13 06:02:13 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:13 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:13 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:13 [INFO] Creating new client: 4
+2024-12-13 06:02:13 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:13 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:13 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:13 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:13 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:13 [INFO] Creating new client: 9
+2024-12-13 06:02:13 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:13 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:13 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:13 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:13 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:13 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:13 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:13 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:13 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:13 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:13 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:13 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:13 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:13 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:13 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:13 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:13 [INFO] write_clients_to_csv completed in 334.58µs seconds.
+2024-12-13 06:02:23 [INFO] Transactions initialized!
+2024-12-13 06:02:23 [INFO] Creating new client: 6
+2024-12-13 06:02:23 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:23 [INFO] Creating new client: 3
+2024-12-13 06:02:23 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:23 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:23 [INFO] Creating new client: 10
+2024-12-13 06:02:23 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:23 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:23 [INFO] Creating new client: 5
+2024-12-13 06:02:23 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:23 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:23 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:23 [INFO] Creating new client: 7
+2024-12-13 06:02:23 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:23 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:23 [INFO] Creating new client: 1
+2024-12-13 06:02:23 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:23 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:23 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:23 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:23 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:23 [INFO] Creating new client: 2
+2024-12-13 06:02:23 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:23 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:23 [INFO] Creating new client: 8
+2024-12-13 06:02:23 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:23 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:23 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:23 [INFO] Creating new client: 4
+2024-12-13 06:02:23 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:23 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:23 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:23 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:23 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:23 [INFO] Creating new client: 9
+2024-12-13 06:02:23 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:23 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:23 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:23 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:23 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:23 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:23 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:23 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:23 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:23 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:23 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:23 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:23 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:23 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:23 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:23 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:23 [INFO] write_clients_to_csv completed in 342.63µs seconds.
+2024-12-13 06:02:34 [INFO] Transactions initialized!
+2024-12-13 06:02:34 [INFO] Creating new client: 6
+2024-12-13 06:02:34 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:34 [INFO] Creating new client: 3
+2024-12-13 06:02:34 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:34 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:34 [INFO] Creating new client: 10
+2024-12-13 06:02:34 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:34 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:34 [INFO] Creating new client: 5
+2024-12-13 06:02:34 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:34 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:34 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:34 [INFO] Creating new client: 7
+2024-12-13 06:02:34 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:34 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:34 [INFO] Creating new client: 1
+2024-12-13 06:02:34 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:34 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:34 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:34 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:34 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:34 [INFO] Creating new client: 2
+2024-12-13 06:02:34 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:34 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:34 [INFO] Creating new client: 8
+2024-12-13 06:02:34 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:34 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:34 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:34 [INFO] Creating new client: 4
+2024-12-13 06:02:34 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:34 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:34 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:34 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:34 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:34 [INFO] Creating new client: 9
+2024-12-13 06:02:34 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:34 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:34 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:34 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:34 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:34 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:34 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:34 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:34 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:34 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:34 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:34 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:34 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:34 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:34 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:34 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:34 [INFO] write_clients_to_csv completed in 269.50µs seconds.
+2024-12-13 06:02:46 [INFO] Transactions initialized!
+2024-12-13 06:02:46 [INFO] Creating new client: 6
+2024-12-13 06:02:46 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:46 [INFO] Creating new client: 3
+2024-12-13 06:02:46 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:46 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:46 [INFO] Creating new client: 10
+2024-12-13 06:02:46 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:46 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:46 [INFO] Creating new client: 5
+2024-12-13 06:02:46 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:46 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:46 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:46 [INFO] Creating new client: 7
+2024-12-13 06:02:46 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:46 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:46 [INFO] Creating new client: 1
+2024-12-13 06:02:46 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:46 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:46 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:46 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:46 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:46 [INFO] Creating new client: 2
+2024-12-13 06:02:46 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:46 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:46 [INFO] Creating new client: 8
+2024-12-13 06:02:46 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:46 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:46 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:46 [INFO] Creating new client: 4
+2024-12-13 06:02:46 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:46 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:46 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:46 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:46 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:46 [INFO] Creating new client: 9
+2024-12-13 06:02:46 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:46 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:46 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:46 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:46 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:46 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:46 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:46 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:46 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:46 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:46 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:46 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:46 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:46 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:46 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:46 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:46 [INFO] write_clients_to_csv completed in 280.50µs seconds.
+2024-12-13 06:02:59 [INFO] Transactions initialized!
+2024-12-13 06:02:59 [INFO] Creating new client: 6
+2024-12-13 06:02:59 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:59 [INFO] Creating new client: 3
+2024-12-13 06:02:59 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:02:59 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:02:59 [INFO] Creating new client: 10
+2024-12-13 06:02:59 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:02:59 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:02:59 [INFO] Creating new client: 5
+2024-12-13 06:02:59 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:59 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:02:59 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:02:59 [INFO] Creating new client: 7
+2024-12-13 06:02:59 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:02:59 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:02:59 [INFO] Creating new client: 1
+2024-12-13 06:02:59 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:02:59 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:02:59 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:02:59 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:02:59 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:02:59 [INFO] Creating new client: 2
+2024-12-13 06:02:59 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:02:59 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:02:59 [INFO] Creating new client: 8
+2024-12-13 06:02:59 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:02:59 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:02:59 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:02:59 [INFO] Creating new client: 4
+2024-12-13 06:02:59 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:02:59 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:02:59 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:02:59 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:02:59 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:02:59 [INFO] Creating new client: 9
+2024-12-13 06:02:59 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:02:59 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:02:59 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:02:59 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:02:59 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:02:59 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:02:59 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:02:59 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:02:59 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:02:59 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:02:59 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:59 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:02:59 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:02:59 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:02:59 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:02:59 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:02:59 [INFO] write_clients_to_csv completed in 273.17µs seconds.
+2024-12-13 06:03:15 [INFO] Transactions initialized!
+2024-12-13 06:03:15 [INFO] Creating new client: 6
+2024-12-13 06:03:15 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:15 [INFO] Creating new client: 3
+2024-12-13 06:03:15 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:03:15 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:03:15 [INFO] Creating new client: 10
+2024-12-13 06:03:15 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:03:15 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:03:15 [INFO] Creating new client: 5
+2024-12-13 06:03:15 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:15 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:03:15 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:03:15 [INFO] Creating new client: 7
+2024-12-13 06:03:15 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:03:15 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:03:15 [INFO] Creating new client: 1
+2024-12-13 06:03:15 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:03:15 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:03:15 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:03:15 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:03:15 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:15 [INFO] Creating new client: 2
+2024-12-13 06:03:15 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:03:15 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:03:15 [INFO] Creating new client: 8
+2024-12-13 06:03:15 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:03:15 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:03:15 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:03:15 [INFO] Creating new client: 4
+2024-12-13 06:03:15 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:03:15 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:03:15 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:03:15 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:03:15 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:03:15 [INFO] Creating new client: 9
+2024-12-13 06:03:15 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:03:15 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:03:15 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:03:15 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:03:15 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:03:15 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:03:15 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:03:15 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:03:15 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:03:15 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:03:15 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:15 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:03:15 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:03:15 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:03:15 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:03:15 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:15 [INFO] write_clients_to_csv completed in 337.96µs seconds.
+2024-12-13 06:03:27 [INFO] Transactions initialized!
+2024-12-13 06:03:27 [INFO] Creating new client: 6
+2024-12-13 06:03:27 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:27 [INFO] Creating new client: 3
+2024-12-13 06:03:27 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:03:27 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:03:27 [INFO] Creating new client: 10
+2024-12-13 06:03:27 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:03:27 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:03:27 [INFO] Creating new client: 5
+2024-12-13 06:03:27 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:27 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:03:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:03:27 [INFO] Creating new client: 7
+2024-12-13 06:03:27 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:03:27 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:03:27 [INFO] Creating new client: 1
+2024-12-13 06:03:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:03:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:03:27 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:03:27 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:03:27 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:27 [INFO] Creating new client: 2
+2024-12-13 06:03:27 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:03:27 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:03:27 [INFO] Creating new client: 8
+2024-12-13 06:03:27 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:03:27 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:03:27 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:03:27 [INFO] Creating new client: 4
+2024-12-13 06:03:27 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:03:27 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:03:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:03:27 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:03:27 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:03:27 [INFO] Creating new client: 9
+2024-12-13 06:03:27 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:03:27 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:03:27 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:03:27 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:03:27 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:03:27 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:03:27 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:03:27 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:03:27 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:03:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:03:27 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:27 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:03:27 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:03:27 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:03:27 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:03:27 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:27 [INFO] write_clients_to_csv completed in 955.13µs seconds.
+2024-12-13 06:03:38 [INFO] Transactions initialized!
+2024-12-13 06:03:38 [INFO] Creating new client: 6
+2024-12-13 06:03:38 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:38 [INFO] Creating new client: 3
+2024-12-13 06:03:38 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:03:38 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:03:38 [INFO] Creating new client: 10
+2024-12-13 06:03:38 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:03:38 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:03:38 [INFO] Creating new client: 5
+2024-12-13 06:03:38 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:38 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:03:38 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:03:38 [INFO] Creating new client: 7
+2024-12-13 06:03:38 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:03:38 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:03:38 [INFO] Creating new client: 1
+2024-12-13 06:03:38 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:03:38 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:03:38 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:03:38 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:03:38 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:03:38 [INFO] Creating new client: 2
+2024-12-13 06:03:38 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:03:38 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:03:38 [INFO] Creating new client: 8
+2024-12-13 06:03:38 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:03:38 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:03:38 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:03:38 [INFO] Creating new client: 4
+2024-12-13 06:03:38 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:03:38 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:03:38 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:03:38 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:03:38 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:03:38 [INFO] Creating new client: 9
+2024-12-13 06:03:38 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:03:38 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:03:38 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:03:38 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:03:38 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:03:38 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:03:38 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:03:38 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:03:38 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:03:38 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:03:38 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:38 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:03:38 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:03:38 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:03:38 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:03:38 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:03:38 [INFO] write_clients_to_csv completed in 666.50µs seconds.
+2024-12-13 06:05:32 [INFO] Transactions initialized!
+2024-12-13 06:05:32 [INFO] Creating new client: 6
+2024-12-13 06:05:32 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:05:32 [INFO] Creating new client: 3
+2024-12-13 06:05:32 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:05:32 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:05:32 [INFO] Creating new client: 10
+2024-12-13 06:05:32 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:05:32 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:05:32 [INFO] Creating new client: 5
+2024-12-13 06:05:32 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:32 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:05:32 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:05:32 [INFO] Creating new client: 7
+2024-12-13 06:05:32 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:05:32 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:05:32 [INFO] Creating new client: 1
+2024-12-13 06:05:32 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:05:32 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:05:32 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:05:32 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:05:32 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:05:32 [INFO] Creating new client: 2
+2024-12-13 06:05:32 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:05:32 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:05:32 [INFO] Creating new client: 8
+2024-12-13 06:05:32 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:05:32 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:05:32 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:05:32 [INFO] Creating new client: 4
+2024-12-13 06:05:32 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:05:32 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:05:32 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:05:32 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:05:32 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:05:32 [INFO] Creating new client: 9
+2024-12-13 06:05:32 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:05:32 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:05:32 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:05:32 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:05:32 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:05:32 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:05:32 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:05:32 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:05:32 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:05:32 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:05:32 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:32 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:05:32 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:05:32 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:05:32 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:05:32 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:32 [INFO] write_clients_to_csv completed in 58.25µs seconds.
+2024-12-13 06:05:52 [INFO] Transactions initialized!
+2024-12-13 06:05:52 [INFO] Creating new client: 6
+2024-12-13 06:05:52 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:05:52 [INFO] Creating new client: 3
+2024-12-13 06:05:52 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:05:52 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:05:52 [INFO] Creating new client: 10
+2024-12-13 06:05:52 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:05:52 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:05:52 [INFO] Creating new client: 5
+2024-12-13 06:05:52 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:52 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:05:52 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:05:52 [INFO] Creating new client: 7
+2024-12-13 06:05:52 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:05:52 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:05:52 [INFO] Creating new client: 1
+2024-12-13 06:05:52 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:05:52 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:05:52 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:05:52 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:05:52 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:05:52 [INFO] Creating new client: 2
+2024-12-13 06:05:52 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:05:52 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:05:52 [INFO] Creating new client: 8
+2024-12-13 06:05:52 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:05:52 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:05:52 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:05:52 [INFO] Creating new client: 4
+2024-12-13 06:05:52 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:05:52 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:05:52 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:05:52 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:05:52 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:05:52 [INFO] Creating new client: 9
+2024-12-13 06:05:52 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:05:52 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:05:52 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:05:52 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:05:52 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:05:52 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:05:52 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:05:52 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:05:52 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:05:52 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:05:52 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:52 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:05:52 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:05:52 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:05:52 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:05:52 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:05:52 [INFO] write_clients_to_csv completed in 62.13µs seconds.
+2024-12-13 06:06:03 [INFO] Transactions initialized!
+2024-12-13 06:06:03 [INFO] Creating new client: 6
+2024-12-13 06:06:03 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:03 [INFO] Creating new client: 3
+2024-12-13 06:06:03 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:06:03 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:06:03 [INFO] Creating new client: 10
+2024-12-13 06:06:03 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:06:03 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:06:03 [INFO] Creating new client: 5
+2024-12-13 06:06:03 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:03 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:06:03 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:06:03 [INFO] Creating new client: 7
+2024-12-13 06:06:03 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:06:03 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:06:03 [INFO] Creating new client: 1
+2024-12-13 06:06:03 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:06:03 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:06:03 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:06:03 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:06:03 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:03 [INFO] Creating new client: 2
+2024-12-13 06:06:03 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:06:03 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:06:03 [INFO] Creating new client: 8
+2024-12-13 06:06:03 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:06:03 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:06:03 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:06:03 [INFO] Creating new client: 4
+2024-12-13 06:06:03 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:06:03 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:06:03 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:06:03 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:06:03 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:06:03 [INFO] Creating new client: 9
+2024-12-13 06:06:03 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:06:03 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:06:03 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:06:03 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:06:03 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:06:03 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:06:03 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:06:03 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:06:03 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:06:03 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:06:03 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:03 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:06:03 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:06:03 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:06:03 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:06:03 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:03 [INFO] write_clients_to_csv completed in 59.54µs seconds.
+2024-12-13 06:06:14 [INFO] Transactions initialized!
+2024-12-13 06:06:14 [INFO] Creating new client: 6
+2024-12-13 06:06:14 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:14 [INFO] Creating new client: 3
+2024-12-13 06:06:14 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:06:14 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:06:14 [INFO] Creating new client: 10
+2024-12-13 06:06:14 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:06:14 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:06:14 [INFO] Creating new client: 5
+2024-12-13 06:06:14 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:14 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:06:14 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:06:14 [INFO] Creating new client: 7
+2024-12-13 06:06:14 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:06:14 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:06:14 [INFO] Creating new client: 1
+2024-12-13 06:06:14 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:06:14 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:06:14 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:06:14 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:06:14 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:14 [INFO] Creating new client: 2
+2024-12-13 06:06:14 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:06:14 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:06:14 [INFO] Creating new client: 8
+2024-12-13 06:06:14 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:06:14 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:06:14 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:06:14 [INFO] Creating new client: 4
+2024-12-13 06:06:14 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:06:14 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:06:14 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:06:14 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:06:14 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:06:14 [INFO] Creating new client: 9
+2024-12-13 06:06:14 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:06:14 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:06:14 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:06:14 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:06:14 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:06:14 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:06:14 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:06:14 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:06:14 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:06:14 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:06:14 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:14 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:06:14 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:06:14 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:06:14 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:06:14 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:14 [INFO] write_clients_to_csv completed in 167.83µs seconds.
+2024-12-13 06:06:26 [INFO] Transactions initialized!
+2024-12-13 06:06:26 [INFO] Creating new client: 6
+2024-12-13 06:06:26 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:26 [INFO] Creating new client: 3
+2024-12-13 06:06:26 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:06:26 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:06:26 [INFO] Creating new client: 10
+2024-12-13 06:06:26 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:06:26 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:06:26 [INFO] Creating new client: 5
+2024-12-13 06:06:26 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:26 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:06:26 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:06:26 [INFO] Creating new client: 7
+2024-12-13 06:06:26 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:06:26 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:06:26 [INFO] Creating new client: 1
+2024-12-13 06:06:26 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:06:26 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:06:26 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:06:26 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:06:26 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:26 [INFO] Creating new client: 2
+2024-12-13 06:06:26 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:06:26 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:06:26 [INFO] Creating new client: 8
+2024-12-13 06:06:26 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:06:26 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:06:26 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:06:26 [INFO] Creating new client: 4
+2024-12-13 06:06:26 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:06:26 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:06:26 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:06:26 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:06:26 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:06:26 [INFO] Creating new client: 9
+2024-12-13 06:06:26 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:06:26 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:06:26 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:06:26 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:06:26 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:06:26 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:06:26 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:06:26 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:06:26 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:06:26 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:06:26 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:26 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:06:26 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:06:26 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:06:26 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:06:26 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:26 [INFO] write_clients_to_csv completed in 59.42µs seconds.
+2024-12-13 06:06:47 [INFO] Transactions initialized!
+2024-12-13 06:06:47 [INFO] Creating new client: 6
+2024-12-13 06:06:47 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:47 [INFO] Creating new client: 3
+2024-12-13 06:06:47 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:06:47 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:06:47 [INFO] Creating new client: 10
+2024-12-13 06:06:47 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:06:47 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:06:47 [INFO] Creating new client: 5
+2024-12-13 06:06:47 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:47 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:06:47 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:06:47 [INFO] Creating new client: 7
+2024-12-13 06:06:47 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:06:47 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:06:47 [INFO] Creating new client: 1
+2024-12-13 06:06:47 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:06:47 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:06:47 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:06:47 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:06:47 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:06:47 [INFO] Creating new client: 2
+2024-12-13 06:06:47 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:06:47 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:06:47 [INFO] Creating new client: 8
+2024-12-13 06:06:47 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:06:47 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:06:47 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:06:47 [INFO] Creating new client: 4
+2024-12-13 06:06:47 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:06:47 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:06:47 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:06:47 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:06:47 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:06:47 [INFO] Creating new client: 9
+2024-12-13 06:06:47 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:06:47 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:06:47 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:06:47 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:06:47 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:06:47 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:06:47 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:06:47 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:06:47 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:06:47 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:06:47 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:47 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:06:47 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:06:47 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:06:47 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:06:47 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:06:47 [INFO] write_clients_to_csv completed in 50.63µs seconds.
+2024-12-13 06:10:12 [INFO] Transactions initialized!
+2024-12-13 06:10:12 [INFO] Creating new client: 6
+2024-12-13 06:10:12 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:12 [INFO] Creating new client: 3
+2024-12-13 06:10:12 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:10:12 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:10:12 [INFO] Creating new client: 10
+2024-12-13 06:10:12 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:10:12 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:10:12 [INFO] Creating new client: 5
+2024-12-13 06:10:12 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:12 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:10:12 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:10:12 [INFO] Creating new client: 7
+2024-12-13 06:10:12 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:10:12 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:10:12 [INFO] Creating new client: 1
+2024-12-13 06:10:12 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:10:12 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:10:12 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:10:12 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:10:12 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:12 [INFO] Creating new client: 2
+2024-12-13 06:10:12 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:10:12 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:10:12 [INFO] Creating new client: 8
+2024-12-13 06:10:12 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:10:12 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:10:12 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:10:12 [INFO] Creating new client: 4
+2024-12-13 06:10:12 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:10:12 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:10:12 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:10:12 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:10:12 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:10:12 [INFO] Creating new client: 9
+2024-12-13 06:10:12 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:10:12 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:10:12 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:10:12 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:10:12 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:10:12 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:10:12 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:10:12 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:10:12 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:10:12 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:10:12 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:12 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:10:12 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:10:12 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:10:12 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:10:12 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:12 [INFO] write_clients_to_csv completed in 53.58µs seconds.
+2024-12-13 06:10:27 [INFO] Transactions initialized!
+2024-12-13 06:10:27 [INFO] Creating new client: 6
+2024-12-13 06:10:27 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:27 [INFO] Creating new client: 3
+2024-12-13 06:10:27 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:10:27 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:10:27 [INFO] Creating new client: 10
+2024-12-13 06:10:27 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:10:27 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:10:27 [INFO] Creating new client: 5
+2024-12-13 06:10:27 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:27 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:10:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:10:27 [INFO] Creating new client: 7
+2024-12-13 06:10:27 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:10:27 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:10:27 [INFO] Creating new client: 1
+2024-12-13 06:10:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:10:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:10:27 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:10:27 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:10:27 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:27 [INFO] Creating new client: 2
+2024-12-13 06:10:27 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:10:27 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:10:27 [INFO] Creating new client: 8
+2024-12-13 06:10:27 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:10:27 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:10:27 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:10:27 [INFO] Creating new client: 4
+2024-12-13 06:10:27 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:10:27 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:10:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:10:27 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:10:27 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:10:27 [INFO] Creating new client: 9
+2024-12-13 06:10:27 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:10:27 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:10:27 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:10:27 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:10:27 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:10:27 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:10:27 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:10:27 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:10:27 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:10:27 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:10:27 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:27 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:10:27 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:10:27 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:10:27 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:10:27 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:27 [INFO] write_clients_to_csv completed in 55.33µs seconds.
+2024-12-13 06:10:42 [INFO] Transactions initialized!
+2024-12-13 06:10:42 [INFO] Creating new client: 6
+2024-12-13 06:10:42 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:42 [INFO] Creating new client: 3
+2024-12-13 06:10:42 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:10:42 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:10:42 [INFO] Creating new client: 10
+2024-12-13 06:10:42 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:10:42 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:10:42 [INFO] Creating new client: 5
+2024-12-13 06:10:42 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:42 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:10:42 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:10:42 [INFO] Creating new client: 7
+2024-12-13 06:10:42 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:10:42 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:10:42 [INFO] Creating new client: 1
+2024-12-13 06:10:42 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:10:42 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:10:42 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:10:42 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:10:42 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:42 [INFO] Creating new client: 2
+2024-12-13 06:10:42 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:10:42 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:10:42 [INFO] Creating new client: 8
+2024-12-13 06:10:42 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:10:42 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:10:42 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:10:42 [INFO] Creating new client: 4
+2024-12-13 06:10:42 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:10:42 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:10:42 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:10:42 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:10:42 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:10:42 [INFO] Creating new client: 9
+2024-12-13 06:10:42 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:10:42 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:10:42 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:10:42 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:10:42 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:10:42 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:10:42 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:10:42 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:10:42 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:10:42 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:10:42 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:42 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:10:42 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:10:42 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:10:42 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:10:42 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:42 [INFO] write_clients_to_csv completed in 55.75µs seconds.
+2024-12-13 06:10:54 [INFO] Transactions initialized!
+2024-12-13 06:10:54 [INFO] Creating new client: 6
+2024-12-13 06:10:54 [WARN] Transaction 1001 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:54 [INFO] Creating new client: 3
+2024-12-13 06:10:54 [INFO] Deposited $177.2400 to Client 3. New available balance: $177.2400
+2024-12-13 06:10:54 [INFO] Deposit of $177.24 successful for client 3. New available balance: $177.24
+2024-12-13 06:10:54 [INFO] Creating new client: 10
+2024-12-13 06:10:54 [INFO] Deposited $153.9900 to Client 10. New available balance: $153.9900
+2024-12-13 06:10:54 [INFO] Deposit of $153.99 successful for client 10. New available balance: $153.99
+2024-12-13 06:10:54 [INFO] Creating new client: 5
+2024-12-13 06:10:54 [WARN] Transaction 1004 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:54 [WARN] Transaction 1005 not found in disputed transactions for client 10. Unable to resolve.
+2024-12-13 06:10:54 [ERROR] Sorry Santa, you've exceeded your limit for this client 5: Insufficient funds
+2024-12-13 06:10:54 [INFO] Creating new client: 7
+2024-12-13 06:10:54 [INFO] Deposited $150.2400 to Client 7. New available balance: $150.2400
+2024-12-13 06:10:54 [INFO] Deposit of $150.24 successful for client 7. New available balance: $150.24
+2024-12-13 06:10:54 [INFO] Creating new client: 1
+2024-12-13 06:10:54 [ERROR] Sorry Santa, you've exceeded your limit for this client 1: Insufficient funds
+2024-12-13 06:10:54 [ERROR] Sorry Santa, you've exceeded your limit for this client 3: Insufficient funds
+2024-12-13 06:10:54 [INFO] Deposited $71.7900 to Client 1. New available balance: $71.7900
+2024-12-13 06:10:54 [INFO] Deposit of $71.79 successful for client 1. New available balance: $71.79
+2024-12-13 06:10:54 [WARN] Transaction 1011 not found in disputed transactions for client 6. Unable to resolve.
+2024-12-13 06:10:54 [INFO] Creating new client: 2
+2024-12-13 06:10:54 [INFO] Deposited $948.1100 to Client 2. New available balance: $948.1100
+2024-12-13 06:10:54 [INFO] Deposit of $948.11 successful for client 2. New available balance: $948.11
+2024-12-13 06:10:54 [INFO] Creating new client: 8
+2024-12-13 06:10:54 [WARN] Transaction 1013 not found in disputed transactions for client 8. Unable to resolve.
+2024-12-13 06:10:54 [INFO] Deposited $563.4300 to Client 5. New available balance: $563.4300
+2024-12-13 06:10:54 [INFO] Deposit of $563.43 successful for client 5. New available balance: $563.43
+2024-12-13 06:10:54 [INFO] Creating new client: 4
+2024-12-13 06:10:54 [INFO] Deposited $217.5900 to Client 4. New available balance: $217.5900
+2024-12-13 06:10:54 [INFO] Deposit of $217.59 successful for client 4. New available balance: $217.59
+2024-12-13 06:10:54 [ERROR] Sorry Santa, you've exceeded your limit for this client 10: Insufficient funds
+2024-12-13 06:10:54 [INFO] Dispute initiated for amount $177.2400 on transaction 1002. Held: $177.2400, Available: $0.0000
+2024-12-13 06:10:54 [INFO] Dispute successful for client 3: $177.2400 moved to Held, Available balance is now $0.0000.
+2024-12-13 06:10:54 [INFO] Creating new client: 9
+2024-12-13 06:10:54 [WARN] Transaction 1018 not found in disputed transactions for client 9. Unable to resolve.
+2024-12-13 06:10:54 [WARN] Error: Transaction ID 1019 not found for dispute.
+2024-12-13 06:10:54 [WARN] Error: Transaction ID 1020 not found for dispute.
+2024-12-13 06:10:54 [INFO] Resolved dispute for transaction 1002: Held -= 177.24, Available += 177.24
+2024-12-13 06:10:54 [INFO] Transaction 1002 was resolved 3. Held funds are now available.
+2024-12-13 06:10:54 [WARN] Transaction 1022 not found in disputed transactions for client 2. Unable to resolve.
+2024-12-13 06:10:54 [INFO] Withdrawal of $706.7700 successful. Your new balance is: $241.3400
+2024-12-13 06:10:54 [INFO] Withdrawal of $706.7700 successful for client 2. New available balance: $241.3400
+2024-12-13 06:10:54 [WARN] Error: Transaction ID 1024 not found for dispute.
+2024-12-13 06:10:54 [ERROR] Sorry Santa, you've exceeded your limit for this client 4: Insufficient funds
+2024-12-13 06:10:54 [WARN] Transaction 1026 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:54 [INFO] Deposited $354.0300 to Client 7. New available balance: $504.2700
+2024-12-13 06:10:54 [INFO] Deposit of $354.03 successful for client 7. New available balance: $504.27
+2024-12-13 06:10:54 [INFO] Deposited $738.0700 to Client 1. New available balance: $809.8600
+2024-12-13 06:10:54 [INFO] Deposit of $738.07 successful for client 1. New available balance: $809.86
+2024-12-13 06:10:54 [WARN] Transaction 10 not found in disputed transactions for client 5. Unable to resolve.
+2024-12-13 06:10:54 [INFO] write_clients_to_csv completed in 54.04µs seconds.

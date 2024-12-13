@@ -32,7 +32,6 @@ static TRANSACTIONS_MAP: LazyLock<DashMap<u32, Transaction>> = LazyLock::new(|| 
 pub fn process_transactions(input_file: &str) -> Result<DashMap<u16, Client>, Box<dyn Error>> {
     // Client Map keeps a copy of all client data in a map for future reference
     let client_map: DashMap<u16, Client> = DashMap::new();
-
     let transaction_file = File::open(input_file)?;
 
     let mut transaction_reader = ReaderBuilder::new()
