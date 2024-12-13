@@ -45,8 +45,8 @@ The standard deviation of the concurrent solution was 214.00 µs, while the orig
 of 33.55µs. The higher standard deviation of concurrent solution could result in a less consistent experiece for the end\
 user.
 
-<img src="./assets/average_runtime_comparison.png" alt="Comparison of Runtime" width="400" height="275">
-<img src="./assets/adjusted_standard_deviation_comparison.png" alt="Comparison of Standard Deviation" width="400" height="275">
+<img src="./assets/average_runtime_comparison.png" alt="Comparison of Runtime" width="600" height="400">
+<img src="./assets/adjusted_standard_deviation_comparison.png" alt="Comparison of Standard Deviation" width="600" height="400">
 
 
 > ✍️ The datasets used in this test had a total of 50 transaction, and each solution was run a total of ten times. For \
